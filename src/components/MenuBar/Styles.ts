@@ -75,9 +75,6 @@ export const MenuButton = styled.button`
   cursor:pointer;
   border-radius: 25px;
 
-  &:hover{
-    background:var(--twitter-dark-hover);
-  }
 
   &:hover, &.active{
     span, svg{
@@ -101,7 +98,7 @@ const Icon = css`
  display:flex;
  flex-direction: column;
  flex-shrink: 0;
- margin : 30px;
+ margin : 20px;
  height : 30px;
  color: var(--white);
 `
@@ -109,6 +106,7 @@ const Icon = css`
 export const Logo = styled(Twitter)`
  width: 30px;
  height: 30px;
+ margin-bottom: 23px;
 
  >svg {
     fill: var(--white);
