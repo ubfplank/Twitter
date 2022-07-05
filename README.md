@@ -7,7 +7,7 @@
 
 
 
-Projeto "Twitter clone", com o objetivo de recriar a interface do twitter para treinar react + styled-componente + flexbox e responsividade. 
+Projeto "Twitter clone", com o objetivo de recriar a interface do twitter para treinar react + styled-components + flexbox e responsividade. 
 
 
 ## 💻 Pré-requisitos
