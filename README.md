@@ -2,6 +2,7 @@
 
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
+https://twitter-clone-one-iota.vercel.app/
 
 ![ezgif-4-7e45e85158](https://user-images.githubusercontent.com/75326612/174888825-ac7f17f0-76a7-44f4-9dc7-798fdfef35db.gif)
 
