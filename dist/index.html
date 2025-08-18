@@ -4,30 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Twitter Clone</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-sans">
+<body>
 
   <!-- Navbar -->
   <header class="fixed top-0 left-0 w-full bg-white border-b border-gray-200 flex items-center justify-between px-6 py-3 shadow-sm z-10">
-    <!-- Logo -->
     <div class="flex items-center space-x-2">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Logo" class="h-6">
     </div>
-
-    <!-- Busca -->
     <div class="flex-1 max-w-md px-4">
-      <input 
-        type="text" 
-        placeholder="Buscar no Twitter" 
-        class="w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-      />
+      <input type="text" placeholder="Buscar no Twitter" class="w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"/>
     </div>
-
-    <!-- Botão Tweetar -->
-    <button class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">
-      Tweetar
-    </button>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">Tweetar</button>
   </header>
 
   <!-- Layout 3 colunas -->
@@ -36,53 +26,15 @@
     <!-- Sidebar esquerda -->
     <aside class="col-span-3 bg-white p-4 rounded-lg shadow sticky top-20">
       <ul class="space-y-4 text-gray-700">
-        <li class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded cursor-pointer">
-          <span>🏠</span><span>Início</span>
-        </li>
-        <li class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded cursor-pointer">
-          <span>🔍</span><span>Explorar</span>
-        </li>
-        <li class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded cursor-pointer">
-          <span>🔔</span><span>Notificações</span>
-        </li>
-        <li class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded cursor-pointer">
-          <span>✉️</span><span>Mensagens</span>
-        </li>
+        <li class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded cursor-pointer"><span>🏠</span><span>Início</span></li>
+        <li class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded cursor-pointer"><span>🔍</span><span>Explorar</span></li>
+        <li class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded cursor-pointer"><span>🔔</span><span>Notificações</span></li>
+        <li class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded cursor-pointer"><span>✉️</span><span>Mensagens</span></li>
       </ul>
     </aside>
 
     <!-- Feed central -->
-    <main class="col-span-6 space-y-4">
-      <!-- Caixa para tweetar -->
-      <div class="bg-white p-4 rounded-lg shadow">
-        <textarea placeholder="O que está acontecendo?" class="w-full p-2 border border-gray-300 rounded resize-none focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
-        <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition float-right">
-          Tweetar
-        </button>
-      </div>
-
-      <!-- Tweets falsos -->
-      <div class="bg-white p-4 rounded-lg shadow space-y-2">
-        <div class="flex items-start space-x-3">
-          <div class="h-10 w-10 bg-gray-300 rounded-full"></div>
-          <div>
-            <p class="font-bold">Usuário 1 <span class="text-gray-500 font-normal">@usuario1 · 1h</span></p>
-            <p>Esse é um tweet de exemplo para mostrar o layout.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-white p-4 rounded-lg shadow space-y-2">
-        <div class="flex items-start space-x-3">
-          <div class="h-10 w-10 bg-gray-300 rounded-full"></div>
-          <div>
-            <p class="font-bold">Usuário 2 <span class="text-gray-500 font-normal">@usuario2 · 2h</span></p>
-            <p>Mais um tweet de exemplo, simulando o feed do Twitter.</p>
-          </div>
-        </div>
-      </div>
-
-    </main>
+    <main class="col-span-6 space-y-4"></main>
 
     <!-- Sidebar direita -->
     <aside class="col-span-3 bg-white p-4 rounded-lg shadow sticky top-20 space-y-4">
@@ -97,19 +49,65 @@
       <div>
         <h2 class="font-bold text-lg mb-2">Sugestões de quem seguir</h2>
         <ul class="space-y-2 text-gray-700">
-          <li class="flex items-center justify-between hover:bg-gray-100 p-2 rounded cursor-pointer">
-            <span>@usuarioA</span>
-            <button class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600 transition">Seguir</button>
-          </li>
-          <li class="flex items-center justify-between hover:bg-gray-100 p-2 rounded cursor-pointer">
-            <span>@usuarioB</span>
-            <button class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600 transition">Seguir</button>
-          </li>
+          <li class="flex items-center justify-between hover:bg-gray-100 p-2 rounded cursor-pointer"><span>@usuarioA</span><button class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600 transition">Seguir</button></li>
+          <li class="flex items-center justify-between hover:bg-gray-100 p-2 rounded cursor-pointer"><span>@usuarioB</span><button class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600 transition">Seguir</button></li>
         </ul>
       </div>
     </aside>
 
   </div>
 
+  <script>
+    const tweets = [
+      { usuario: "usuario1", nome: "Usuário 1", hora: "1h", texto: "Tweet de exemplo 1." },
+      { usuario: "usuario2", nome: "Usuário 2", hora: "2h", texto: "Tweet de exemplo 2." }
+    ];
+
+    const feed = document.querySelector("main");
+
+    function criarTweetBox() {
+      const box = document.createElement("div");
+      box.className = "tweet";
+      box.innerHTML = `
+        <textarea placeholder="O que está acontecendo?" class="w-full p-2 border border-gray-300 rounded resize-none"></textarea>
+        <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded-full float-right">Tweetar</button>
+      `;
+      feed.appendChild(box);
+
+      const textarea = box.querySelector("textarea");
+      const button = box.querySelector("button");
+
+      button.addEventListener("click", () => {
+        const texto = textarea.value.trim();
+        if (!texto) return;
+        adicionarTweet({ usuario: "meuUsuario", nome: "Eu", hora: "Agora", texto });
+        textarea.value = "";
+      });
+    }
+
+    function adicionarTweet(tweet) {
+      const div = document.createElement("div");
+      div.className = "tweet";
+      div.innerHTML = `
+        <p class="font-bold">${tweet.nome} <span class="text-gray-500 font-normal">@${tweet.usuario} · ${tweet.hora}</span></p>
+        <p>${tweet.texto}</p>
+        <div class="tweet-actions">
+          <button>💬 Responder</button>
+          <button>🔁 Retweetar</button>
+          <button>❤️ Curtir</button>
+        </div>
+      `;
+      feed.insertBefore(div, feed.children[1]);
+    }
+
+    function renderizarTweets() {
+      tweets.forEach(tweet => adicionarTweet(tweet));
+    }
+
+    criarTweetBox();
+    renderizarTweets();
+  </script>
+
 </body>
 </html>
+
